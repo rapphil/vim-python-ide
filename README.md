@@ -4,7 +4,7 @@ This project aims to use Vim as a powerful and complete Python IDE. In order
 to do that, we curated a list of awesome plugins available in the community and
 provided an automatic installation procedure for this set.
 
-<img src="./docs/img/vim.png?raw=true"/>
+<img src="./img/vim.png?raw=true"/>
 
 ## Installation
 
@@ -62,11 +62,11 @@ Powered by:
 Easily navigate your project using:
 
  * File tree explore (Nerdtree)
-![Nerdtree](./img/nerdtree.gif)
+<img src="./img/nerdtree.gif"/>
  * Fuzzy finder based on the file names
-![fuzzy-finder](./img/fzf.gif)
+<img src="./img/fzf.gif"/>
  * File structure (classes, functions, methods).
-![tagbar](./img/tagbar.gif)
+<img src="./img/tagbar.gif"/>
 Powered by:
 
  * [Nerdtree](https://github.com/scrooloose/nerdtree)
@@ -77,7 +77,8 @@ Powered by:
 
  * Full text search based on both exact match and fuzzy finder capabilities
  * Extremely fast.
-![ripgrep](./img/ripgrep.gif)
+<img src="./img/ripgrep.gif"/>
+
 Powered by:
 
  * [Ripgrep](https://github.com/BurntSushi/ripgrep)

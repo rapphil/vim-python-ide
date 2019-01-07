@@ -6,5 +6,7 @@ repo_url: "https://github.com/rapphil/vim-python-ide"
 google_analytics: ["UA-131814198-1", "auto"]
 theme: 
   name: 'material'
+  palette: 
+    primary: "blue-grey"
   feature:
     tabs: true
