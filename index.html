@@ -402,8 +402,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-mapping" title="Key mapping" class="md-nav__link">
-    Key mapping
+  <a href="#key-bindings" title="Key bindings" class="md-nav__link">
+    Key bindings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" title="Commands" class="md-nav__link">
+    Commands
   </a>
   
 </li>
@@ -557,8 +564,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-mapping" title="Key mapping" class="md-nav__link">
-    Key mapping
+  <a href="#key-bindings" title="Key bindings" class="md-nav__link">
+    Key bindings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" title="Commands" class="md-nav__link">
+    Commands
   </a>
   
 </li>
@@ -583,11 +597,10 @@
                 
                 
                 <h1 id="contents">Contents</h1>
-<p>The motivation for this project is the fact that Vim is a powerful tool, but it
-takes some time to master. With Vim and some plugins it is possible to create a
-fully functional Python IDE with several capabilities so that it is possible
-to leverage a workflow that does not require mouse.</p>
-<p><img alt="Screenshot" src="img/vim.png" /></p>
+<p>This project aims to use Vim as a powerful and complete Python IDE. In order
+to do that, we curated a list of awesome plugins available in the community and
+provided an automatic installation procedure for this set.</p>
+<p><img src="./docs/img/vim.png?raw=true"/></p>
 <h2 id="installation">Installation</h2>
 <h3 id="requirements-for-ubuntu-distros">Requirements for Ubuntu distros</h3>
 <pre><code class="bash">sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev \
@@ -608,7 +621,7 @@ cd vim-python-ide &amp;&amp; ./install.sh
 
 <h2 id="features">Features</h2>
 <p>Please check the available features and the plugins that enable them.</p>
-<h4 id="syntax-highlighting">Syntax Highlighting</h4>
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
 <p>Syntax highlighting for several languages, besides Python.</p>
 <p>Powered by:</p>
 <ul>
@@ -628,33 +641,44 @@ cd vim-python-ide &amp;&amp; ./install.sh
 <h3 id="project-navigation">Project Navigation</h3>
 <p>Easily navigate your project using:</p>
 <ul>
-<li>File tree explores</li>
-<li>Fuzzy finder based on the file names</li>
-<li>File structure (classes, functions, methods).</li>
-</ul>
-<p>Powered by:</p>
-<ul>
-<li><a href="https://github.com/scrooloose/nerdtree">Nerdtree</a></li>
+<li>File tree explore (Nerdtree)
+<img alt="Nerdtree" src="img/nerdtree.gif" /></li>
+<li>Fuzzy finder based on the file names
+<img alt="fuzzy-finder" src="img/fzf.gif" /></li>
+<li>
+<p>File structure (classes, functions, methods).
+<img alt="tagbar" src="img/tagbar.gif" />
+Powered by:</p>
+</li>
+<li>
+<p><a href="https://github.com/scrooloose/nerdtree">Nerdtree</a></p>
+</li>
 <li><a href="https://github.com/junegunn/fzf.vim">Fzf</a></li>
 <li><a href="https://majutsushi.github.io/tagbar/">Tagbar</a></li>
 </ul>
 <h3 id="powerfull-full-text-search">Powerfull Full Text search</h3>
 <ul>
 <li>Full text search based on both exact match and fuzzy finder capabilities</li>
-<li>Extremely fast.</li>
-</ul>
-<p>Powered by:</p>
-<ul>
-<li><a href="https://github.com/BurntSushi/ripgrep">Ripgrep</a></li>
+<li>
+<p>Extremely fast.
+<img alt="ripgrep" src="img/ripgrep.gif" />
+Powered by:</p>
+</li>
+<li>
+<p><a href="https://github.com/BurntSushi/ripgrep">Ripgrep</a></p>
+</li>
 <li><a href="https://github.com/junegunn/fzf.vim">Fzf</a></li>
 </ul>
 <h3 id="real-time-linting">Real time linting</h3>
 <p>Lint source files in real time an check for errors and warnings.</p>
-<p>Powered by:
- * <a href="https://github.com/w0rp/ale">Ale</a></p>
+<p>Powered by:</p>
+<ul>
+<li><a href="https://github.com/w0rp/ale">Ale</a></li>
+</ul>
 <h3 id="code-navigation">Code navigation</h3>
 <ul>
-<li>Go to function definitions and check functions parameters and docstrings easily.</li>
+<li>Go to function definitions</li>
+<li>Check parameters and docstrings easily.</li>
 </ul>
 <p>Powered by:</p>
 <ul>
@@ -688,7 +712,81 @@ cd vim-python-ide &amp;&amp; ./install.sh
 <li><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></li>
 <li><a href="https://github.com/airblade/vim-gitgutter">vim-gitgutter</a></li>
 </ul>
-<h2 id="key-mapping">Key mapping</h2>
+<h2 id="key-bindings">Key bindings</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Mode</th>
+<th>key binding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toogle Nerdtree</td>
+<td>Normal</td>
+<td><code>crtl + n</code></td>
+</tr>
+<tr>
+<td>toogle Tagbar</td>
+<td>Normal</td>
+<td><code>f8</code></td>
+</tr>
+<tr>
+<td>Look for file</td>
+<td>Normal</td>
+<td><code>crtl + p</code></td>
+</tr>
+<tr>
+<td>Goto definition</td>
+<td>Normal</td>
+<td><code>crtl + ]</code></td>
+</tr>
+<tr>
+<td>Show docstring</td>
+<td>Normal</td>
+<td><code>K</code></td>
+</tr>
+<tr>
+<td>Extract method</td>
+<td>Normal/Visual</td>
+<td><code>crlt + c r m</code></td>
+</tr>
+<tr>
+<td>Auto complete</td>
+<td>Insert</td>
+<td><code>crtl + space</code></td>
+</tr>
+<tr>
+<td>Expand snippet</td>
+<td>Insert</td>
+<td><code>tab</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Look for string</td>
+<td><code>:Rg &lt;string&gt;</code></td>
+</tr>
+<tr>
+<td>git status</td>
+<td><code>:Gstatus</code></td>
+</tr>
+<tr>
+<td>git diff</td>
+<td><code>:Gdiff</code></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
