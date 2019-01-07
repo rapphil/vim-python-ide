@@ -1,0 +1,10 @@
+site_name: Vim as a Python IDE
+site_author: "Raphael Philipe Mendes da Silva"
+site_description: "Small side project to provide an out-of-box Python IDE based on Vim and a set of community plugins"
+repo_url: "https://github.com/rapphil/vim-python-ide"
+
+google_analytics: ["UA-131814198-1", "auto"]
+theme: 
+  name: 'material'
+  feature:
+    tabs: true
