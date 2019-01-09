@@ -15,8 +15,6 @@ make -j $CPUS && make install
 
 pip2 install --user rope jedi ropevim flake8
 
-cp ${CURDIR}/vimrc ${HOME}/.vimrc
-
 UPDATE_PATH='export PATH=${HOME}/tools/vim/bin:$PATH'
 
 export PATH=${HOME}/tools/vim/bin:$PATH
