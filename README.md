@@ -9,13 +9,13 @@ provided an automatic installation procedure for this set.
 ## Installation
 
 
-### Requirements for Ubuntu distros
+### Requirements for Ubuntu distros (Tested on Windows Subsystem for Linux)
 
 ```bash
 sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev \
 libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
 libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
-python3-dev git
+python3-dev git ctags
 ```
 
 ### Requirements for Fedora distros
