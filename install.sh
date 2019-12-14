@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIM_VERSION="v8.1.0664"
+VIM_VERSION="v8.2.0007"
 CURDIR=${PWD}
 CPUS=$(grep -c ^processor /proc/cpuinfo)
 
