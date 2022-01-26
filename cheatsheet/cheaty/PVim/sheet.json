@@ -1,0 +1,58 @@
+{
+	"name": "PVim",
+	"description": "Custom pluggins for Vim ",
+	"author": "",
+	"email": "",
+	"repository": "",
+	"version": "1.0",
+	"sections": {
+		"File": {
+			"Toggle file tree": {
+				"description": "",
+				"code": "CTRL+n"
+			},
+			"Look for file": {
+				"description":"",
+				"code":"CTRL+p"
+			}
+		},
+		"Code navigation":{
+			"Toggle definitions": {
+				"description":"",
+				"code": "F8"
+			},
+			"Go to definition": {
+				"description":"",
+				"code":"CTRL+]"
+			},
+			"Show doctrstring": {
+				"description":"",
+				"code":"K"
+			}
+		},
+		"Code edition":{
+			"Extract method": {
+				"description":"",
+				"code":"CTRL+ c r m"
+			},
+			"Autocomplete": {
+				"description":"",
+				"code":"CTRL+SPACE"
+			},
+			"Expand snippet": {
+				"description":"",
+				"code":"tab"
+			}
+		},
+		"Git":{
+			"Status": {
+				"description":"",
+				"code":":Gstatus"
+			},
+			"Diff": {
+				"description":"",
+				"code":":Gdiff"
+			}
+		}
+	} 
+}
